@@ -9,10 +9,10 @@
     box-sizing: border-box;
 }
 
-:focus {
-    outline: 3px solid black;
-    outline-offset: 0; 
-}
+// .date-box:focus {
+//     outline: 3px solid black;
+//     outline-offset: 0; 
+// }
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -41,6 +41,10 @@ body {
                 height: 200px;
                 align-items: center;
                 justify-content: center;
+                transition: all .2s ease-in-out;
+                outline: none;
+                
+                
 
                 .date-box__day {
                     font-size: 17px;
@@ -50,6 +54,12 @@ body {
                 .data-box__date {
                     font-size: 57px;
                     font-weight: 700;
+                }
+
+                &:hover {
+                    transform: scale(0.95);
+                    box-shadow: inset 0px -1px 7px 0px black;
+                    background: rgb(245, 95, 69);
                 }
             }
         }

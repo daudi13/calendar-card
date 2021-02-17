@@ -8,11 +8,6 @@
           box-sizing: border-box;
 }
 
-:focus {
-  outline: 3px solid black;
-  outline-offset: 0;
-}
-
 body {
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
@@ -60,6 +55,9 @@ body .frame .center .date-box {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  outline: none;
 }
 
 body .frame .center .date-box .date-box__day {
@@ -70,5 +68,13 @@ body .frame .center .date-box .date-box__day {
 body .frame .center .date-box .data-box__date {
   font-size: 57px;
   font-weight: 700;
+}
+
+body .frame .center .date-box:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: inset 0px -1px 7px 0px black;
+          box-shadow: inset 0px -1px 7px 0px black;
+  background: #f55f45;
 }
 /*# sourceMappingURL=main.css.map */
