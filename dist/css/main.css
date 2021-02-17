@@ -10,9 +10,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-}
-
-body frame {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +20,50 @@ body frame {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
+}
+
+body .frame {
   -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background: tomato;
+  border-radius: 5px;
+  color: #fff;
+  width: 400px;
+  height: 400px;
+}
+
+body .frame .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .frame .center .date-box {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .frame .center .date-box .date-box__day {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+body .frame .center .date-box .data-box__date {
+  font-size: 57px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

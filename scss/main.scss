@@ -11,11 +11,44 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
-    frame {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    .frame {
+        box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+        background: tomato;
+        border-radius: 5px;
+        color: #fff;
+        width: 400px;
+        height: 400px;
+
+        .center {
+            display: flex;
+            flex-wrap: wrap;
+
+            .date-box {
+                display: inherit;
+                flex-direction: column;
+                width: 200px;
+                height: 200px;
+                align-items: center;
+                justify-content: center;
+
+                .date-box__day {
+                    font-size: 17px;
+                    font-weight: 300;
+                }
+
+                .data-box__date {
+                    font-size: 57px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+
     }
 }
