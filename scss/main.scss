@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+:focus {
+    outline: 3px solid black;
+    outline-offset: 0; 
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
